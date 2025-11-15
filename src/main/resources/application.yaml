@@ -6,7 +6,7 @@ spring:
     url: jdbc:h2:mem:libreria_db
     driver-class-name: org.h2.Driver
     username: sa
-    password: 
+    password:
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,8 +18,7 @@ spring:
         format_sql: true
   sql:
     init:
-      mode: always
-      data-locations: classpath:data.sql
+     mode: never
   h2:
     console:
       enabled: true
@@ -30,7 +29,11 @@ spring:
 external:
   api:
     books:
-      url: 
+      url: https://my-json-server.typicode.com/Gabriel-Arriola-UTN/libros/books
 
 server:
   port: 8080
+
+
+
+
